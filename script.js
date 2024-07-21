@@ -31,7 +31,8 @@ addEventListener('click', () => { })
 
 async function main() {
 
-    let a = await fetch('http://127.0.0.1:3000/quran/');
+ 
+    let a = await fetch('/quran/');
     let response = await a.text();
     // console.log(response)
 
