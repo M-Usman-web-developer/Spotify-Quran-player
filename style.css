@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #101010;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+}
+
+.left-box {
+    width: 25%;
+    background-color: #000000;
+}
+
+.close img {
+    width: 160px;
+}
+
+.close_up {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 70%;
+    top: 30px;
+    display: none;
+
+}
+
+/* Upper part  */
+.upper {
+    background-color: #121212;
+    /* border: 2px solid white; */
+    margin: 10px;
+    border-radius: 8px;
+
+}
+
+.upper>img {
+    width: 134px;
+    /* border: 2px solid white; */
+    margin: -10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -20px;
+    /* border: 2px solid wheat; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.name_img img {
+    width: 20px;
+    padding-left: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.749);
+    padding-bottom: 10px;
+}
+
+.search:hover {
+    color: white;
+
+}
+
+.search_img img {
+    width: 20px;
+    padding-left: 30px;
+    filter: invert(0.5);
+}
+
+.search_img img:hover {
+    filter: invert(0.1);
+}
+
+
+/* Lower part  */
+.lower {
+    background-color: #121212;
+    /* border: 2px solid white; */
+    margin: 10px;
+    border-radius: 8px;
+    min-height: 80vh;
+    position: relative;
+}
+
+.library {
+    color: aliceblue;
+    /* border: 2px solid wheat; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.749);
+
+}
+
+
+.library img {
+    width: 25px;
+    padding-left: 30px;
+}
+
+.library:hover {
+    color: aliceblue;
+}
+
+/* menu-box */
+/* .menu-box{
+    border: 2px solid white;
+    height: 60vh;
+    color: aliceblue;
+    overflow: scroll;
+} */
+.menu-box {
+    /* border: 2px solid white; */
+    background-color: #242424;
+    height: 50vh;
+    color: aliceblue;
+    overflow: scroll;
+    border-radius: 9px;
+    width: 90%;
+    padding-left: 40px;
+    padding-top: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+.menu-box ol li {
+    list-style: none;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/* Scrollbar styling for WebKit browsers */
+.menu-box::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width of the scrollbar */
+}
+
+.menu-box::-webkit-scrollbar-track {
+    background: black;
+    /* Background of the scrollbar track */
+}
+
+.menu-box::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* Color of the scrollbar thumb */
+    border-radius: 0;
+    /* No rounded corners for the scrollbar thumb */
+    border: 0;
+    /* No border around the scrollbar thumb */
+}
+
+/* Scrollbar styling for Firefox */
+.menu-box {
+    scrollbar-color: black black;
+    /* Thumb and track color both black */
+    scrollbar-width: thin;
+    /* Thin scrollbar width */
+}
+
+
+/* footer  */
+.footer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* border: 2px solid wheat; */
+    height: 80px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer ul li {
+    list-style: none;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+/* Right side  */
+.right-box {
+    background-color: #000000;
+    /* background-color: #664949; */
+    width: 75%;
+    border-radius: 9px;
+    /* position: relative; */
+
+}
+
+.nav {
+    background-color: #101010;
+    /* border: 2px solid wheat; */
+    /* border-radius: 3px; */
+    margin-top: 12px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamberger {
+    display: none;
+}
+
+.nav button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+.arrow{
+    display: block;
+  }
+
+.btn .button2 {
+    font-size: 15px;
+
+}
+
+.btn .button2:hover {
+    /* font-size: 17px; */
+    padding: 13px;
+    width: 105px;
+
+}
+
+.btn .button1 {
+    background-color: #101010;
+    color: rgba(240, 248, 255, 0.832);
+    border: none;
+    width: none;
+}
+
+.btn .button1:hover {
+    color: aliceblue;
+    font-size: 17px;
+
+}
+
+/* Middle-part */
+.middle-part {
+    display: flex;
+    /* justify-content: start; */
+    /* align-items: start; */
+    flex-wrap: wrap;
+    /* border: 2px solid wheat; */
+    max-height: 70vh;
+    overflow: scroll;
+
+}
+
+/* Scrollbar styling for WebKit browsers */
+.middle-part::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width of the scrollbar */
+}
+
+.middle-part::-webkit-scrollbar-track {
+    background: black;
+    /* Background of the scrollbar track */
+}
+
+.middle-part::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* Color of the scrollbar thumb */
+    border-radius: 0;
+    /* No rounded corners for the scrollbar thumb */
+    border: 0;
+    /* No border around the scrollbar thumb */
+}
+
+/* Scrollbar styling for Firefox */
+.middle-part {
+    scrollbar-color: black black;
+    /* Thumb and track color both black */
+    scrollbar-width: thin;
+    /* Thin scrollbar width */
+}
+
+
+.middle-part .frame {
+    /* border: 2px solid white; */
+    width: 260px;
+    height: 280px;
+    padding: 50px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50px;
+    margin: 10px;
+
+}
+
+.middle-part .frame:hover {
+
+    background-color: #1d1d1d;
+
+}
+
+.frame img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+
+.frame .frame-name {
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    /* border: 2px solid wheat; */
+    padding: 20px;
+}
+
+.frame .frame-name:hover {
+    font-size: 15px;
+}
+
+.frame-play img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 390px;
+    left: 250px;
+    position: absolute;
+    top: 280px;
+    /*220 */
+    left: 250px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.middle-part .frame:hover .frame-play img {
+    top: 220px;
+    /* New position */
+    opacity: 1;
+}
+
+
+/* footer-bar */
+.footer-bar {
+    background-color: #242424;
+    height: 110px;
+    width: 70%;
+    position: absolute;
+    bottom: 100px;
+    margin-left: 39px;
+    border-radius: 20px;
+
+}
+
+.footer-bar button img {
+    height: 50px;
+    cursor: pointer;
+    padding: 5px;
+    width: 90px;
+}
+
+.footer-bar .btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.seek-bar {
+    background-color: aliceblue;
+    height: 5px;
+    border-radius: 10px;
+    width: 95%;
+    margin: 1px auto;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.seek-bar .circle {
+    border-radius: 50px;
+    background-color: rgb(45, 127, 200);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    transition: left 0.5s ease-out;
+
+}
+
+#surat_info {
+    color: white;
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 450px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+
+}
+
+#time {
+    color: white;
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 450px;
+    text-align: end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+
+
+/* Responsive part  */
+
+@media (max-width: 1750px) {
+    .menu-box {
+        width: 85%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (max-width: 1400px) {
+    .menu-box ol li {
+        padding-top: -10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .menu-box {
+        width: 80%;
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (max-width: 1350px) {
+    .left-box {
+        width: 330px;
+        position: absolute;
+        left: -330px;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .right-box {
+        width: 100%;
+    }
+
+    .footer-bar {
+        width: 90%;
+
+    }
+
+    .hamberger {
+        display: block;
+
+    }
+
+    .close_up {
+
+        display: block;
+
+    }
+    
+}
+
+
+@media (max-width: 1014px) {
+    #surat_info {
+        display: none;    
+    }
+    #time {
+        display: none;
+    }
+    .footer-bar .btn {
+
+        margin: 10px 190px; 
+    }
+    
+}
+@media (max-width: 700px) {
+    .footer-bar {
+        width: 85%;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .footer-bar button img {
+        height: 45px;
+        padding: 2px;
+        /*width: 90px; */
+    }
+
+    .footer-bar .btn {
+
+        margin: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-bar {
+        width: 80%;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .footer-bar button img {
+        height: 35px;
+        padding: 1px;
+        width: 80px;
+    }
+
+    .footer-bar .btn {
+
+        margin: 15px;
+    }
+
+    .middle-part {
+        display: flex;
+        justify-content: center; 
+        align-items: start;
+    }
+}
+
+@media (max-width: 450px) {
+    .arrow{
+      display: none;
+    }
+  }
+  
+
+@media (max-width: 400px) {
+    .footer-bar {
+        width: 70%;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .footer-bar button img {
+        height: 30px;
+        padding: 10px;
+        width: 40px;
+    }
+
+
+}
+
